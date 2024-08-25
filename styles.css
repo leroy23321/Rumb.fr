@@ -1,0 +1,134 @@
+/* Style général du corps */
+body {
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    font-family: 'Arial', sans-serif; /* Police moderne */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Logo centré */
+.logo {
+    margin-top: 20px; /* Espace en haut de la page */
+    text-align: center; /* Centre le logo */
+}
+
+.logo img {
+    max-width: 150px; /* Réduit la taille du logo */
+    height: auto;
+}
+
+/* Menu déroulant */
+.menu-toggle {
+    position: absolute;
+    top: 20px; /* Positionne en haut de la page */
+    left: 20px; /* Positionne à gauche */
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+/* Espace compte avec icône utilisateur */
+.user-account {
+    position: absolute;
+    top: 20px; /* Positionne en haut de la page */
+    right: 20px; /* Positionne à droite */
+}
+
+.user-icon {
+    font-size: 24px; /* Taille de l'icône utilisateur */
+    color: #fff;
+}
+
+/* Barre de recherche centrée juste en dessous du logo */
+.search-bar {
+    margin-top: 10px; /* Petit espace entre le logo et la barre de recherche */
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    width: 300px; /* Largeur de la barre de recherche */
+    padding: 8px;
+    border-radius: 20px; /* Bord arrondi pour un design moderne */
+    border: 1px solid #444; /* Couleur de la bordure */
+    background-color: #222; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    font-size: 16px; /* Taille de police */
+}
+
+/* Grille de vidéos en disposition horizontale */
+.video-grid {
+    display: flex; /* Utilisation de Flexbox */
+    flex-wrap: wrap; /* Permet aux vidéos de passer à la ligne suivante si nécessaire */
+    justify-content: center; /* Centre les vidéos horizontalement */
+    gap: 20px; /* Espace entre les vidéos */
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Carte de vidéo avec design moderne */
+.video-card {
+    background-color: #111;
+    padding: 10px;
+    border-radius: 8px; /* Bord arrondi */
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 280px; /* Largeur des cartes de vidéo */
+    max-width: 100%; /* S'adapte à la taille de l'écran */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour un effet stylé */
+}
+
+.video-card:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Augmente l'ombre au survol */
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Information sur la vidéo avec police stylée */
+.video-info {
+    padding: 10px;
+    color: #ddd;
+    font-family: 'Helvetica Neue', sans-serif; /* Police moderne et stylée */
+}
+
+.video-info h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold; /* Texte en gras pour les titres */
+}
+
+.video-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Style pour le footer centré */
+.centered-footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    width: 100%;
+    color: #999;
+}
